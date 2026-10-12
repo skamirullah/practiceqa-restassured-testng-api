@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Product",
+  "type": "object",
+  "required": ["id", "sku", "name", "category", "price", "stock", "rating", "createdAt", "updatedAt"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "integer", "minimum": 1 },
+    "sku": { "type": "string", "pattern": "^[A-Z]{2}-\\d{3}$" },
+    "name": { "type": "string", "minLength": 2 },
+    "category": { "type": "string" },
+    "price": { "type": "number", "minimum": 0, "exclusiveMinimum": true },
+    "stock": { "type": "integer", "minimum": 0 },
+    "rating": { "type": "number", "minimum": 0, "maximum": 5 },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" }
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Practice REST API: smoke">
+<suite name="Practice REST API - smoke">
   <test name="Smoke">
     <groups>
       <run>

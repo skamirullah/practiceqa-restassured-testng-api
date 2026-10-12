@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <!-- The practice API keeps its data in memory, so tests run one at a time against a freshly reset server. -->
-<suite name="Practice REST API: products">
+<suite name="Practice REST API - products">
   <test name="Regression">
     <packages>
       <package name="com.practiceqa.api.tests"/>
